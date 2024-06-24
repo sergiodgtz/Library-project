@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+</head>
+<body>
+    <div class="content">
+    </div>
+    <br>
+    <button id="BtnAnadirLibro"> New Book</button>
+    <br>
+    <div class="form-container">
+        <dialog id="addBookDialog">
+            <form method="dialog">
+                <legend> Add a new book </legend>
+                <ul>
+                    <li>
+                        <label for="TxtBookTitle"> Title </label> 
+                        <input name= "Title" id="TxtBookTitle" class= "text-input" type="text">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="TxtAuthorName"> Author </label> 
+                        <input name= "Author" id="TxtAuthorName" class= "text-input" type="text">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="TxtNumPages"> Num. Pages </label> 
+                        <input name= "Num. Pages" id="TxtNumPages" class="text-input" type="number">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="ChkRead"> Read </label> 
+                        <input name= "Read" id="ChkRead" class= "text-input" type="checkbox">
+                    </li>
+                </ul>
+                <button action="submit" id="BtnGuardar"> Add</button>  
+                <button action="" id="BtnCancelar"> Cancel</button>  
+            </form>
+        </dialog>
+    </div>
+</body>
+</html>
